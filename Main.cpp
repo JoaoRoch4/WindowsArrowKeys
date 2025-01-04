@@ -91,11 +91,13 @@ void About() {
 void funcMenu() {
     clearBuffer();
 
-    auto home = std::unique_ptr<Menu>();
+    auto homeptr = std::unique_ptr<Menu>();
+
+    Menu home;
 
     bool bSetted = false;
 
-    if (bSetted) {
+    if (bSetted == false) {
         home.setTitle(" Option ~~~~~~~~~~ 1 ");
         home.setTitle(" Option ~~~~~~~~~~ 2 ");
         home.setTitle(" Option ~~~~~~~~~~ 3 ");

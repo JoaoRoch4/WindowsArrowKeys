@@ -29,7 +29,7 @@ Menu::Menu()
       bRun(true),
       hConsole(),
       iNumKeyNumber(-1),
-      ModeToSet(0),
+      iModeToSet(0),
       Titlecounter(0),
       header(),
       titleVector() {
@@ -41,7 +41,7 @@ Menu::Menu()
     func_vRideCursor();
 }
 
-void Menu::getTitle() {
+void Menu::func_vShowTitle() {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
     SetConsoleTextAttribute(hConsole, 112);
@@ -57,9 +57,9 @@ void Menu::getTitle() {
     }
 }
 
-int Menu::getModeToSet() const { return ModeToSet; }
+int Menu::getModeToSet() const { return iModeToSet; }
 
-void Menu::setModeToSet(const int ModeToSet) { this->ModeToSet = ModeToSet; }
+void Menu::setModeToSet(const int iModeToSet) { this->iModeToSet = iModeToSet; }
 
 void Menu::func_vRideCursor() {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -87,13 +87,14 @@ void Menu::setTitle(const std::string &Title1) {
 
 void Menu::setHeader(const std::string &headerRec) { header = headerRec; }
 
-int Menu::chooseTitle() {
-    std::cout << header;                                  // header
+int Menu::PrintTitle() {
+    std::cout << header; // header
 
     std::cout
-        << "\nChoose Mode (Arrowkeys, Enter with ->):\n"; // MODIFY for custom
-                                                          // select-text
-    getTitle();
+
+        << "\nChoose Mode (Arrowkey+s, Enter with ->):\n"; // MODIFY for custom
+                                                           // select-text
+    func_vShowTitle();
 
     return func_iRun();
 }
@@ -119,22 +120,19 @@ int Menu::func_iRun() {
         for (int i = 0; i < 256; i++) {
             if (GetAsyncKeyState(i) & 0b1) {
                 if (i == VK_DOWN) func_vUpArrow();
-
-                 else if (i == VK_UP) func_vDownArrow();
-
+                else if (i == VK_UP) func_vDownArrow();
                 else if (i == VK_RETURN) return func_vEnterKey();
-
-                 else if (i == VK_0 || i == VK_NUMPAD0) return func_iNumKey(0);
-                 else if (i == VK_1 || i == VK_NUMPAD1) return func_iNumKey(1);
-                 else if (i == VK_2 || i == VK_NUMPAD2) return func_iNumKey(2);
-                 else if (i == VK_3 || i == VK_NUMPAD3) return func_iNumKey(3);
-                 else if (i == VK_4 || i == VK_NUMPAD4) return func_iNumKey(4);
-                 else if (i == VK_5 || i == VK_NUMPAD5) return func_iNumKey(5);
-                 else if (i == VK_6 || i == VK_NUMPAD6) return func_iNumKey(6);
-                 else if (i == VK_7 || i == VK_NUMPAD7) return func_iNumKey(7);
-                 else if (i == VK_8 || i == VK_NUMPAD8) return func_iNumKey(8);
-                 else if (i == VK_9 || i == VK_NUMPAD9) return func_iNumKey(9);
-                 else  Sleep(500);
+                else if (i == VK_0 || i == VK_NUMPAD0) return func_iNumKey(0);
+                else if (i == VK_1 || i == VK_NUMPAD1) return func_iNumKey(1);
+                else if (i == VK_2 || i == VK_NUMPAD2) return func_iNumKey(2);
+                else if (i == VK_3 || i == VK_NUMPAD3) return func_iNumKey(3);
+                else if (i == VK_4 || i == VK_NUMPAD4) return func_iNumKey(4);
+                else if (i == VK_5 || i == VK_NUMPAD5) return func_iNumKey(5);
+                else if (i == VK_6 || i == VK_NUMPAD6) return func_iNumKey(6);
+                else if (i == VK_7 || i == VK_NUMPAD7) return func_iNumKey(7);
+                else if (i == VK_8 || i == VK_NUMPAD8) return func_iNumKey(8);
+                else if (i == VK_9 || i == VK_NUMPAD9) return func_iNumKey(9);
+                else  Sleep(500);
             }
             // clang-format on
         }
@@ -171,7 +169,8 @@ void Menu::func_vDownArrow() {
     int lines = vecSize + 1;
     func_vEraseLines(lines);
 
-    if (Titlecounter > 0) { Titlecounter--; }
+    if (Titlecounter > 0) Titlecounter--;
+
     for (int i = 0; i < Titlecounter; i++) {
         std::cout << "\n" << titleVector[i];
     }
