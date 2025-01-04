@@ -131,7 +131,7 @@ public:
 	Menu();
 
 	/**
-     * Prints the title.
+     * @brief Prints the title.
      *
      * \return go to func_iRun() initializing the program;
      */
