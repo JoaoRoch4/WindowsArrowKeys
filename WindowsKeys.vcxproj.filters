@@ -28,6 +28,7 @@
   <ItemGroup>
     <None Include="cpp.hint" />
     <None Include=".clang-format" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyTypes.hpp">
