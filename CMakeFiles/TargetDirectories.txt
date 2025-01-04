@@ -1,0 +1,4 @@
+C:/Users/jubar/OneDrive/Programacao/CloudFiles/Cpp/projetos/VsCode/WindowsKeys/CMakeFiles/WindowsKeys.dir
+C:/Users/jubar/OneDrive/Programacao/CloudFiles/Cpp/projetos/VsCode/WindowsKeys/CMakeFiles/INSTALL.dir
+C:/Users/jubar/OneDrive/Programacao/CloudFiles/Cpp/projetos/VsCode/WindowsKeys/CMakeFiles/ALL_BUILD.dir
+C:/Users/jubar/OneDrive/Programacao/CloudFiles/Cpp/projetos/VsCode/WindowsKeys/CMakeFiles/ZERO_CHECK.dir
