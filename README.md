@@ -61,7 +61,7 @@ Steps to Compile
   ## Example Commands
   Here is a summary of the commands you will run:
 
-    git clone <repository_url>
+    git clone <https://github.com/JoaoRoch4/WindowsKeys>
     cd WindowsKeys
     mkdir build
     cd build
