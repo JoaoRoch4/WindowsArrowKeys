@@ -42,7 +42,7 @@ Steps to Compile
     
     1. Clone the repository:
 
-        git clone <https://github.com/JoaoRoch4/WindowsKeys>
+        git clone https://github.com/JoaoRoch4/WindowsKeys
         cd WindowsKeys
 
     2. Create a build directory:
@@ -61,7 +61,7 @@ Steps to Compile
   ## Example Commands
   Here is a summary of the commands you will run:
 
-    git clone <https://github.com/JoaoRoch4/WindowsKeys>
+    git clone https://github.com/JoaoRoch4/WindowsKeys
     cd WindowsKeys
     mkdir build
     cd build
