@@ -26,7 +26,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="old._clang-format" />
     <None Include="cpp.hint" />
     <None Include=".clang-format" />
   </ItemGroup>

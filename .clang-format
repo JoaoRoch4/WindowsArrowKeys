@@ -2,100 +2,94 @@
 Language:        Cpp
 
 #The extra indent or outdent of access modifiers,
-AccessModifierOffset: -4
+AccessModifierOffset: -4 #Integer
 
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=g.%20public%3A.-,AlignAfterOpenBracket,-(BracketAlignmentStyle)
-AlignAfterOpenBracket: Align # Align, DontAlign, AlwaysBreak, BlockIndent
+AlignAfterOpenBracket: DontAlign # (BracketAlignmentStyle) Align, DontAlign, AlwaysBreak, BlockIndent
 
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=AlignArrayOfStructures
-AlignArrayOfStructures: None # None, Left, Right
+AlignArrayOfStructures: Right # (ArrayInitializerAlignmentStyle) None, Left, Right
 
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=InheritParentConfig%2C%20ColumnLimit%3A%2020%7D-,AccessModifierOffset,-(Integer)
-AlignConsecutiveAssignments: #Boolean
+AlignConsecutiveAssignments: # (AlignConsecutiveStyle)
 
-    Enabled:               false
-    AcrossEmptyLines:      false
-    AcrossComments:        false
-    AlignCompound:         false
-    AlignFunctionPointers: false
-    PadOperators:          true
-
+    Enabled:               true #Boolean
+    AcrossEmptyLines:      true #Boolean
+    AcrossComments:        true #Boolean
+    AlignCompound:         true #Boolean
+    AlignFunctionPointers: true #Boolean
+    PadOperators:          true #Boolean
 
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=%3E%3E%3D%202%3B-,AlignConsecutiveBitFields,-(AlignConsecutiveStyle)
-AlignConsecutiveBitFields: #Boolean
+AlignConsecutiveBitFields: # (AlignConsecutiveStyle)
 
-    Enabled:               false
-    AcrossEmptyLines:      false
-    AcrossComments:        false
-    AlignCompound:         false
-    AlignFunctionPointers: false
-    PadOperators:          false
-
+    Enabled:               true #Boolean
+    AcrossEmptyLines:      true #Boolean
+    AcrossComments:        true #Boolean
+    AlignCompound:         true #Boolean
+    AlignFunctionPointers: true #Boolean
+    PadOperators:          true #Boolean
 
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=%3E%3E%3D%202%3B-,AlignConsecutiveDeclarations,-(AlignConsecutiveStyle)
 AlignConsecutiveDeclarations: #Boolean
 
-    Enabled:               false
-    AcrossEmptyLines:      false
-    AcrossComments:        false
-    AlignCompound:         false
-    AlignFunctionPointers: false
-    PadOperators:          false
-
+    Enabled:               true #Boolean
+    AcrossEmptyLines:      true #Boolean
+    AcrossComments:        true #Boolean
+    AlignCompound:         true #Boolean
+    AlignFunctionPointers: true #Boolean
+    PadOperators:          true #Boolean
 
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=%3E%3E%3D%202%3B-,AlignConsecutiveMacros,-(AlignConsecutiveStyle)
-AlignConsecutiveMacros: #Boolean
+AlignConsecutiveMacros: #(AlignConsecutiveStyle)
 
-    Enabled:               false
-    AcrossEmptyLines:      false
-    AcrossComments:        false
-    AlignCompound:         false
-    AlignFunctionPointers: false
-    PadOperators:          false
-
+    Enabled:               true #Boolean
+    AcrossEmptyLines:      true #Boolean
+    AcrossComments:        true #Boolean
+    AlignCompound:         true #Boolean
+    AlignFunctionPointers: true #Boolean
+    PadOperators:          true #Boolean
 
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=%3E%3E%3D%202%3B-,AlignConsecutiveShortCaseStatements,-(ShortCaseStatementsAlignmentStyle)
-AlignConsecutiveShortCaseStatements: #Boolean
+AlignConsecutiveShortCaseStatements: #(ShortCaseStatementsAlignmentStyletrue) 
 
-    Enabled:          false
-    AcrossEmptyLines: false
-    AcrossComments:   false
-    AlignCaseArrows:  false
-    AlignCaseColons:  false
-
+    Enabled:          true #Boolean
+    AcrossEmptyLines: true #Boolean
+    AcrossComments:   true #Boolean
+    AlignCaseArrows:  true #Boolean
+    AlignCaseColons:  true #Boolean
 
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=%22%22%3B%0A%7D-,AlignConsecutiveTableGenBreakingDAGArgColons,-(AlignConsecutiveStyle)
-AlignConsecutiveTableGenBreakingDAGArgColons: #Boolean
-    
-    Enabled:               false
-    AcrossEmptyLines:      false
-    AcrossComments:        false
-    AlignCompound:         false
-    AlignFunctionPointers: false
-    PadOperators:          false
+AlignConsecutiveTableGenBreakingDAGArgColons: #(AlignConsecutiveStyle) 
 
+    Enabled:               true #Boolean
+    AcrossEmptyLines:      true #Boolean
+    AcrossComments:        true #Boolean
+    AlignCompound:         true #Boolean
+    AlignFunctionPointers: true #Boolean
+    PadOperators:          true #Boolean
+    
+    #AlignFunctionDeclarations: true #Boolean not working
 
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=%3E%3E%3D%202%3B-,AlignConsecutiveTableGenCondOperatorColons,-(AlignConsecutiveStyle)
-AlignConsecutiveTableGenCondOperatorColons: #Boolean
+AlignConsecutiveTableGenCondOperatorColons: #(AlignConsecutiveStyle) 
   
-    Enabled:               false
-    AcrossEmptyLines:      false
-    AcrossComments:        false
-    AlignCompound:         false
-    AlignFunctionPointers: false
-    PadOperators:          false
-
+    Enabled:               true #Boolean
+    AcrossEmptyLines:      true #Boolean
+    AcrossComments:        true #Boolean
+    AlignCompound:         true #Boolean
+    AlignFunctionPointers: true #Boolean
+    PadOperators:          true #Boolean
 
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=%3E%3E%3D%202%3B-,AlignConsecutiveTableGenDefinitionColons,-(AlignConsecutiveStyle)
-AlignConsecutiveTableGenDefinitionColons: #Boolean
+AlignConsecutiveTableGenDefinitionColons: #(AlignConsecutiveStyle)
   
-    Enabled:               false
-    AcrossEmptyLines:      false
-    AcrossComments:        false
-    AlignCompound:         false
-    AlignFunctionPointers: false
-    PadOperators:          false
-
+    Enabled:               true #Boolean
+    AcrossEmptyLines:      true #Boolean
+    AcrossComments:        true #Boolean
+    AlignCompound:         true #Boolean
+    AlignFunctionPointers: true #Boolean
+    PadOperators:          true #Boolean
 
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=AlignEscapedNewlines
 AlignEscapedNewlines: Left # Left, LeftWithLastLine, Right, DontAlign
@@ -158,8 +152,33 @@ AlwaysBreakBeforeMultilineStrings: true #Boolean
 
 
 AttributeMacros:
-  - __capability
+    - __asm 
+    - __capability
+    - __inline 
+    - __fastcall 
+    - __forceinline
+    - __kernel
+    -  _Noreturn 
+    - __noinline
+    - __nonnull
+    - __nothrow
+    - __null_unspecified
+    - __ptr32
+    - __ptr64
+    - __restrict
+    - __stdcall
+    - __thiscall
+    - __vectorcall
+    - __w64
+    - __warn_unused_result
+    - __weak
+    - __weakref
+    - __wur
+    - __attribute__
+    - __declspec
 
+    
+  
 
 BinPackArguments: true #Boolean
 
@@ -218,17 +237,17 @@ BreakBeforeBraces: Attach
 
 BreakBeforeInlineASMColon: OnlyMultiline
 
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=BreakBeforeTernaryOperators
+BreakBeforeTernaryOperators: false #Boolean
 
-BreakBeforeTernaryOperators: true #Boolean
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=BreakConstructorInitializers
+BreakConstructorInitializers: BeforeComma #BeforeColon, BeforeComma, AfterColon
 
-
-BreakConstructorInitializers: BeforeColon
-
-
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=BreakFunctionDefinitionParameters
 BreakFunctionDefinitionParameters: false #Boolean
 
-
-BreakInheritanceList: BeforeColon
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=BreakInheritanceList
+BreakInheritanceList: BeforeColon #BeforeColon, BeforeComma, AfterColon, AfterComma
 
 
 BreakStringLiterals: true #Boolean
@@ -353,12 +372,12 @@ InsertTrailingCommas: None
 
 
 IntegerLiteralSeparator: #Integer
-  Binary:           0
-  BinaryMinDigits:  0
-  Decimal:          0
-  DecimalMinDigits: 0
-  Hex:              0
-  HexMinDigits:     0
+    Binary:           3
+    BinaryMinDigits:  7
+    Decimal:          3
+    DecimalMinDigits: 5
+    Hex:              2
+    HexMinDigits:     6
 
 
 JavaScriptQuotes: Leave
@@ -408,8 +427,8 @@ ObjCSpaceAfterProperty: false #Boolean
 
 ObjCSpaceBeforeProtocolList: true #Boolean
 
-
-PackConstructorInitializers: NextLine
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#accessmodifieroffset:~:text=BAR%0A%23endif-,PackConstructorInitializers,-(PackConstructorInitializersStyle)
+PackConstructorInitializers: Never #Never, BinPack, NextLine, NextLineOnly
 
 
 PenaltyBreakAssignment: 2 #Integer
@@ -459,6 +478,8 @@ RawStringFormats: #String
   - Language: Cpp
 
     Delimiters:
+        - c
+        - C
         - cc
         - CC
         - cpp
@@ -466,8 +487,10 @@ RawStringFormats: #String
         - CPP
         - 'c++'
         - 'C++'
+        - cplusplus
+        - Cplusplus
 
-    CanonicalDelimiter: ''
+    CanonicalDelimiter: c
 
     BasedOnStyle: google
 
@@ -619,18 +642,46 @@ SpacesInParensOptions: #Boolean
 SpacesInSquareBrackets: false #Boolean
 
 
-Standard: Auto
+Standard: Latest
 
 
 StatementAttributeLikeMacros: #String
 
     - Q_EMIT
+    - __assume
+    - __declspec
+    - __forceinline
+    - __inline
+    - __int64
+    - __leave
+    - __m128
+    - __m128d
+    - __m128i
+    - __m64
+    - __pragma
+    - __ptr32
+    - __ptr64
+    - __restrict
+    - __stdcall
+    - __try
+    - __uuidof
+    - __w64
+    - __wchar_t
 
 
 StatementMacros: #String
 
     - Q_UNUSED
     - QT_REQUIRE_VERSION
+    - __assume
+    - __debugbreak
+    - __noop
+    - __pragma
+    - __leave
+    - __if_exists
+    - __if_not_exists
+    - __interface
+    - __declspec
 
 
 TableGenBreakInsideDAGArg: DontBreak
@@ -639,7 +690,7 @@ TableGenBreakInsideDAGArg: DontBreak
 TabWidth: 4 #Integer
 
 
-UseTab:          Never
+UseTab: Always
 
 
 VerilogBreakBetweenInstancePorts: true #Boolean
@@ -651,6 +702,13 @@ WhitespaceSensitiveMacros: #String
     - CF_SWIFT_NAME
     - NS_SWIFT_NAME
     - PP_STRINGIZE
-     - STRINGIZE
+    - STRINGIZE
+    - __if_exists
+    - __if_not_exists
+    - __interface
+    - __declspec
+    - __pragma
+    
+
 ...
 

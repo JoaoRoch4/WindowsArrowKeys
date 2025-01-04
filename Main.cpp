@@ -1,9 +1,9 @@
-﻿// Author: João Rocha.
-// Date:  "Jan  2 2025"
-// Version: 1.0.0
-// Path:
-// "C:\\Users\\jubar\\OneDrive\\Programacao\\CloudFiles\\Cpp\\projetos\\
-// VsCode\\WindowsKeys\\Main.cpp"
+﻿/*****************************************************************//**
+ * @file   Main.cpp
+ * @brief  
+ * @author João Rocha
+ * @date   4 January 2025
+ *********************************************************************/
 
 #include <cstdlib>
 #include <iosfwd>
@@ -11,6 +11,7 @@
 #include <limits>
 #include <memory>
 #include <string>
+
 #include "Menu.hpp"
 #include "MyTypes.hpp"
 
@@ -90,9 +91,6 @@ void About() {
 
 void funcMenu() {
     clearBuffer();
-
-    auto homeptr = std::unique_ptr<Menu>();
-
     Menu home;
 
     bool bSetted = false;
@@ -112,7 +110,7 @@ void funcMenu() {
 
     //...
 
-    home.setModeToSet(home.chooseTitle());
+    home.setModeToSet(home.getModeToSet());
 
     std::cout << "Selected Option: " << home.getModeToSet() << '\n';
 
@@ -126,35 +124,35 @@ void funcMenu() {
     int mode = home.getModeToSet();
 
     switch (mode) {
-        case 1 : std::cout << "Option 1"; return clearAndReturn();
-        case 2 : std::cout << "Option 2"; return clearAndReturn();
-        case 3 : std::cout << "Option 3"; return clearAndReturn();
-        case 4 : std::cout << "Option 4"; return clearAndReturn();
-        case 5 : std::cout << "Option 5"; return clearAndReturn();
-        case 6 : std::cout << "Option 6"; return clearAndReturn();
+        case 1: std::cout << "Option 1"; return clearAndReturn();
+        case 2: std::cout << "Option 2"; return clearAndReturn();
+        case 3: std::cout << "Option 3"; return clearAndReturn();
+        case 4: std::cout << "Option 4"; return clearAndReturn();
+        case 5: std::cout << "Option 5"; return clearAndReturn();
+        case 6: std::cout << "Option 6"; return clearAndReturn();
 
-        case 7 : {
+        case 7: {
             std::cout << "Option 7";
             whriteToCosole();
             return clearAndReturn();
         }
 
-        case 8 : {
+        case 8: {
             std::cout << "Option 8";
             help();
             return clearAndReturn();
         }
 
-        case 9 : {
+        case 9: {
             std::cout << "Option 9";
             About();
             return clearAndReturn();
         }
 
-        case 10 : [[fallthrough]];
+        case 10: [[fallthrough]];
 
         //...
-        default : std::cout << "Option not found"; return clearAndReturn();
+        default: std::cout << "Option not found"; return clearAndReturn();
     }
 }
 

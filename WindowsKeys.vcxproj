@@ -74,6 +74,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <ExcludePath>C:\Program Files %28x86%29\Windows Kits;$(ExcludePath)</ExcludePath>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -115,6 +117,8 @@
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <ExternalTemplatesDiagnostics>false</ExternalTemplatesDiagnostics>
       <DisableAnalyzeExternal>true</DisableAnalyzeExternal>
+      <AnalyzeExternalRuleset>C:\Users\jubar\OneDrive\Programacao\CloudFiles\Cpp\Rules\None.ruleset</AnalyzeExternalRuleset>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,7 +149,6 @@
   <ItemGroup>
     <None Include=".clang-format" />
     <None Include="cpp.hint" />
-    <None Include="old._clang-format" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menu.hpp" />
