@@ -1,11 +1,11 @@
-/*****************************************************************/ /**
+﻿/*****************************************************************/ /**
  * @file Menu.hpp
  *
  * @brief A class that creates a menu with a list of options,
  * and the user can choose one of them using the arrow keys with
  * enter key. Also, number keys and numpad keys work aswell.
  *
- * @author Jo�o Rocha
+ * @author João Rocha
  * @date 4 January 2025
  *********************************************************************/
 

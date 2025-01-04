@@ -151,7 +151,7 @@
     <ClCompile Include="src\MyTypes.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include=".clang-format" />
+    <None Include=".gitignore" />
     <None Include="cpp.hint" />
     <None Include="README.md" />
   </ItemGroup>
