@@ -146,6 +146,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\ArrowKey_Menu_cpp\Main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Menu.cpp" />
     <ClCompile Include="src\MyTypes.cpp" />
@@ -159,6 +162,7 @@
     <Text Include="CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\ArrowKey_Menu_cpp\menuclass.h" />
     <ClInclude Include="include\Menu.hpp" />
     <ClInclude Include="include\MyTypes.hpp" />
   </ItemGroup>

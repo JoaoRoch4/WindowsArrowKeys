@@ -2,12 +2,8 @@
 
 // clang-format off
 
-
-
 void headerShow() noexcept {
-
-    const char *Msg {
-
+    const char* Msg{
       "——————————————————————————————————————————————————————————————————————————————————————————"
       "——————————————————————————|\n|"
       "\t\t\t\t"
@@ -28,15 +24,13 @@ void headerShow() noexcept {
       "\n|—————————————————————————————————————————————————————————————————————————————————"
       "——————————————————————————————————|\n\n"
     };
-    out << Msg;
+    std::cout << Msg;
 }
 
-void headerShow(const bool &show) noexcept {
-
+void headerShow(const bool& show) noexcept {
     if (!show) return;
 
-    const char *Msg {
-
+    const char* Msg{
       "——————————————————————————————————————————————————————————————————————————————————————————"
       "——————————————————————————|\n|"
       "\t\t\t\t"
@@ -55,11 +49,9 @@ void headerShow(const bool &show) noexcept {
       "\t\t\t\t\t\t\t\t\t\t\t\t    "
       "|\n|" __FILE__ "    |"
       "\n|—————————————————————————————————————————————————————————————————————————————————"
-      "——————————————————————————————————|\n\n"};
+      "——————————————————————————————————|\n\n" };
 
-    out << Msg;
+    std::cout << Msg;
 }
 
 // clang-format on
-
-

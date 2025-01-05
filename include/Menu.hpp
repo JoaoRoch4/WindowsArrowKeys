@@ -14,161 +14,165 @@
 #include <string>
 #include <vector>
 
-typedef void *HANDLE;
+typedef void* HANDLE;
 
 class Menu {
 private:
 
-	/**
+    /**
      * @brief if the NumKey was pressed or not.
      */
-	bool					 bNumKey;
+    bool					 bNumKey;
 
-	/**
+    /**
      * @brief if the program is running or not.
      */
-	bool					 bRun;
+    bool					 bRun;
 
-	/**
+    /**
      * @brief The console handle.
      */
-	HANDLE					 hConsole;
+    HANDLE					 hConsole;
 
-	/**
+    /**
      * @brief The number key that was pressed.
      */
-	int						 iNumKeyNumber;
+    int						 iNumKeyNumber;
 
-	/**
+    /**
      * @brief The mode to set.
      */
-	int						 iModeToSet;
+    int						 iModeToSet;
 
-	/**
+    /**
      * @brief The cursor position.
      */
-	int						 Titlecounter;
+    int						 Titlecounter;
 
-	/**
+    /**
      * @brief The header.
      */
-	std::string				 header;
+    std::string				 header;
 
-	/**
+    /**
      * @brief The title.
      */
-	std::vector<std::string> titleVector;
+    std::vector<std::string> titleVector;
 
 protected:
 
-	/**
+    /**
     * @brief This function processes the number key input.
     * @param uiNumKey The number key that was pressed.
     * @return uiNumKey itself the processed number key.
     */
-	int	 func_iNumKey(const unsigned int uiNumKey);
+    int	 func_iNumKey(const unsigned int uiNumKey);
 
-	/**
+    /**
      * @brief This function processes the key input.
      * @return Titlecounter + 1 where is the cursor.
      */
-	int	 func_iRun();
+    int	 func_iRun();
 
-	/**
+    /**
      * @brief When the enter-key is pressed.
      * @return Titlecounter + 1 where is the cursor.
      */
-	int	 func_vEnterKey();
+    int	 func_vEnterKey();
 
-	int	 func_iNumberKeys(int iPosition);
+    int	 func_iNumberKeys(int iPosition);
 
-	/**
+    /**
      * @brief Clears the screen.
      */
-	void func_vClearScreen();
+    void func_vClearScreen();
 
-	/**
+    /**
      * @brief Moves the cursor down with the down arrow key.
      */
-	void func_vDownArrow();
+    void func_vDownArrow();
 
-	/**
+    /**
      * @brief Erases the lines.
      * @param uiCount The number of lines to erase.
      */
-	void func_vEraseLines(const unsigned int uiCount);
+    void func_vEraseLines(const unsigned int uiCount);
 
-	/**
+    /**
      * @brief Prints the header.
      */
-	void func_vPrintHeader();
+    void func_vPrintHeader();
 
-	/**
+    /**
      * @brief Prints the message.
      */
-	void func_vPrintMsg();
+    void func_vPrintMsg();
 
-	/**
+    /**
      * @brief hides the cursor.
      */
-	void func_vRideCursor();
+    void func_vRideCursor();
 
-	/**
+    /**
      * @brief Moves the cursor up with the up arrow key.
      */
-	void func_vUpArrow();
+    void func_vUpArrow();
 
-	/**
+    /**
      * @brief Shows the title.
      */
-	void func_vShowTitle();
+    void func_vShowTitle();
 
 public:
 
-	/**
+    /**
      * @brief Default contructor.
      */
-	Menu();
+    Menu();
 
-	/**
+    int chooseTitle();
+
+    /**
      * @brief Prints the title.
      *
      * \return go to func_iRun() initializing the program;
      */
-	int	 PrintTitle();
+    int	 PrintTitle();
 
-	/*Getters*/
+    /*Getters*/
 
-	/**
+    /**
      * @brief iModeToSet getter
      * @return iModeToSet
      */
-	int	 getModeToSet() const;
-	/* !Getters */
+    int	 getModeToSet();
+    /* !Getters */
 
-	/*Setters*/
+    /*Setters*/
 
-	/**
+    /**
      * @brief header setter
      * @param headerRec The header to set.
      */
-	void setHeader(const std::string &headerRec);
+    void setHeader(const std::string& headerRec);
 
-	/**
+    /**
      * @brief iModeToSet setter
      * @param iModeToSet The mode to set.
      */
-	void setModeToSet(const int iModeToSet);
+    void setModeToSet(const int iModeToSet);
 
-	/**
+    /**
      * @brief setTitle setter
      * @param Title1 The title to set.
      */
-	void setTitle(const std::string &Title1);
-	/* !Setters */
+    void setTitle(const std::string& Title1);
+    /* !Setters */
 
-	/**
+    void setTitle(std::initializer_list<std::string> list);
+
+    /**
      * @brief Default destructor.
      */
-	~Menu();
+    ~Menu();
 };

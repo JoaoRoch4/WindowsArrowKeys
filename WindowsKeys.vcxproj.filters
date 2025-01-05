@@ -24,6 +24,9 @@
     <ClCompile Include="src\MyTypes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\ArrowKey_Menu_cpp\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
@@ -38,6 +41,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\MyTypes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ArrowKey_Menu_cpp\menuclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
