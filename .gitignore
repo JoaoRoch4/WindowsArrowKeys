@@ -363,12 +363,18 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /latex
-/html
+
+# Old Clang-format files 
 /old._clang-format.txt
 /test.clang-format.txt
 /notclang-format.txt
-/Doxyfile
 /.clang-format2.clang-format.txt
-/doxygen
+
+# cmake junk
 /Binaries
 /CMakeFiles
+
+# Ignore all files in the doxygen folder except the Doxyfile
+doxygen/*
+!doxygen/Doxyfile
+

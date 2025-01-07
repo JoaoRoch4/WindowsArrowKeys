@@ -24,7 +24,10 @@
     <ProjectGuid>{ce37ef4e-3612-4ac8-99e4-f5ca8388c4d6}</ProjectGuid>
     <RootNamespace>WindowsKeys</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>WindowsKeys</ProjectName>
+    <ProjectName>WindowsArrowKeys</ProjectName>
+    <TargetFrameworkVersion>4.8.1</TargetFrameworkVersion>
+    <TargetFramework>9</TargetFramework>
+    <WindowsTargetPlatformMinVersion>11</WindowsTargetPlatformMinVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -45,6 +48,9 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <VCToolsVersion>14.42.34433</VCToolsVersion>
+    <CLRSupport>true</CLRSupport>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -79,6 +85,16 @@
     <ExecutablePath>$(VC_ExecutablePath_x64);$(CommonExecutablePath)</ExecutablePath>
     <IncludePath>$(ProjectDir)include\;$(ProjectDir)src\;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
     <ReferencePath>$(ProjectDir)include\;$(ProjectDir)src\;$(VC_ReferencesPath_x64);</ReferencePath>
+    <CopyLocalDeploymentContent>true</CopyLocalDeploymentContent>
+    <CopyLocalProjectReference>true</CopyLocalProjectReference>
+    <CopyLocalDebugSymbols>true</CopyLocalDebugSymbols>
+    <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+    <ManagedAssembly>true</ManagedAssembly>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+    <AllProjectBMIsArePublic>true</AllProjectBMIsArePublic>
+    <PublicIncludeDirectories>C:\Users\jubar\OneDrive\Programacao\CloudFiles\Cpp\projetos\VsCode\WindowsKeys\include;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <PublicModuleDirectories>C:\Users\jubar\OneDrive\Programacao\CloudFiles\Cpp\projetos\VsCode\WindowsKeys\src;$(PublicModuleDirectories)</PublicModuleDirectories>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -114,8 +130,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_AMD64_;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
-      <LanguageStandard_C>stdclatest</LanguageStandard_C>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
       <TreatAngleIncludeAsExternal>true</TreatAngleIncludeAsExternal>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <ExternalTemplatesDiagnostics>false</ExternalTemplatesDiagnostics>
@@ -123,6 +139,8 @@
       <AnalyzeExternalRuleset>C:\Users\jubar\OneDrive\Programacao\CloudFiles\Cpp\Rules\None.ruleset</AnalyzeExternalRuleset>
       <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
       <AdditionalIncludeDirectories>$(ProjectDir)include\;$(ProjectDir)src\;$(VC_IncludePath);</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,9 +164,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\ArrowKey_Menu_cpp\Main.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Menu.cpp" />
     <ClCompile Include="src\MyTypes.cpp" />
@@ -162,7 +177,7 @@
     <Text Include="CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\ArrowKey_Menu_cpp\menuclass.h" />
+    <Text Include="..\ArrowKey_Menu_cpp\menuclass.h" />
     <ClInclude Include="include\Menu.hpp" />
     <ClInclude Include="include\MyTypes.hpp" />
   </ItemGroup>

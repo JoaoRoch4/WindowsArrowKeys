@@ -31,49 +31,10 @@ WindowsKeys is a utility program designed to provide users with the ability to r
 3. **Apply Changes**: Save the configuration and apply the changes.
 4. **Enjoy**: Use your newly remapped key as the Windows key.
 
-## Installation
-
-Prerequisites
-Ensure you have the following installed on your system:
-•	CMake
-•	A C++ compiler (e.g., GCC, Clang, MSVC)
-
-Steps to Compile
-    
-    1. Clone the repository:
-
-        git clone https://github.com/JoaoRoch4/WindowsKeys
-        cd WindowsKeys
-
-    2. Create a build directory:
-        mkdir build
-        cd build
-
-    3. Generate build files using CMake:
-        cmake ..
-
-    4. Compile the project:
-        cmake --build .
-
-    5. Run the executable:
-        WindowsKeys.exe
-        
-  ## Example Commands
-  Here is a summary of the commands you will run:
-
-    git clone https://github.com/JoaoRoch4/WindowsKeys
-    cd WindowsKeys
-    mkdir build
-    cd build
-    cmake ..
-    cmake --build .
-    WindowsKeys.exe
-
-
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or have found a bug, please open an issue or submit a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](#) file for details.
+This project is licensed under the Commons Clause License Condition v1.0 - see the [LICENSE](#) file for details.
