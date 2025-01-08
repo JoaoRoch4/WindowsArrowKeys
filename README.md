@@ -1,11 +1,11 @@
-﻿# WindowsKeys
-/*****************************************************************/ /**
+﻿# WindowsKeys 
+## Author: João Rocha
 
-    author:  João Rocha
-    date:    4 January 2025
-    version: 0.0.1
 
- *********************************************************************/
+Date:      4 January 2025
+Version:   0.0.1
+
+
 
 ## Project Description
 
