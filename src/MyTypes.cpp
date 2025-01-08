@@ -1,4 +1,4 @@
-﻿/*
+/*
 * Project Name: Windows Arrow Keys
 * Author: João Rocha
 * Year: 2025
@@ -27,6 +27,7 @@
 // clang-format off
 
 void headerShow() noexcept {
+
     const char* Msg{
       "——————————————————————————————————————————————————————————————————————————————————————————"
       "——————————————————————————|\n|"

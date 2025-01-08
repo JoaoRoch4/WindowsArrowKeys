@@ -34,6 +34,7 @@
     <None Include="README.md">
       <Filter>Solution Files</Filter>
     </None>
+    <None Include=".clang-format" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Menu.hpp">
@@ -42,13 +43,16 @@
     <ClInclude Include="include\MyTypes.hpp">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\menuclass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt">
       <Filter>Solution Files</Filter>
-    </Text>
-    <Text Include="..\ArrowKey_Menu_cpp\menuclass.h">
-      <Filter>include</Filter>
     </Text>
   </ItemGroup>
 </Project>

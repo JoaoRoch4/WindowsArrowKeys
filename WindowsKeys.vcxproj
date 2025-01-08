@@ -25,7 +25,7 @@
     <RootNamespace>WindowsKeys</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>WindowsArrowKeys</ProjectName>
-    <TargetFrameworkVersion>4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>0</TargetFrameworkVersion>
     <TargetFramework>9</TargetFramework>
     <WindowsTargetPlatformMinVersion>11</WindowsTargetPlatformMinVersion>
   </PropertyGroup>
@@ -49,7 +49,7 @@
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <VCToolsVersion>14.42.34433</VCToolsVersion>
-    <CLRSupport>true</CLRSupport>
+    <CLRSupport>false</CLRSupport>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -89,8 +89,8 @@
     <CopyLocalProjectReference>true</CopyLocalProjectReference>
     <CopyLocalDebugSymbols>true</CopyLocalDebugSymbols>
     <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
-    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
-    <ManagedAssembly>true</ManagedAssembly>
+    <EnableManagedIncrementalBuild>false</EnableManagedIncrementalBuild>
+    <ManagedAssembly>false</ManagedAssembly>
     <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
     <AllProjectBMIsArePublic>true</AllProjectBMIsArePublic>
     <PublicIncludeDirectories>C:\Users\jubar\OneDrive\Programacao\CloudFiles\Cpp\projetos\VsCode\WindowsKeys\include;$(PublicIncludeDirectories)</PublicIncludeDirectories>
@@ -130,8 +130,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_AMD64_;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
       <TreatAngleIncludeAsExternal>true</TreatAngleIncludeAsExternal>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <ExternalTemplatesDiagnostics>false</ExternalTemplatesDiagnostics>
@@ -164,11 +164,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Interface.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Menu.cpp" />
     <ClCompile Include="src\MyTypes.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".clang-format" />
     <None Include=".gitignore" />
     <None Include="cpp.hint" />
     <None Include="README.md" />
@@ -177,9 +179,10 @@
     <Text Include="CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\ArrowKey_Menu_cpp\menuclass.h" />
+    <ClInclude Include="include\Interface.hpp" />
     <ClInclude Include="include\Menu.hpp" />
     <ClInclude Include="include\MyTypes.hpp" />
+    <ClInclude Include="include\menuclass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

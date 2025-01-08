@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Project Name: Windows Arrow Keys
  * Author: João Rocha
  * Year: 2025
@@ -40,10 +40,10 @@
 //	setlocale(LC_ALL, ""); \
 //	SetConsoleOutputCP(65'001)
 
-typedef std::string str;
-typedef std::wstring wstr;
-typedef std::vector<int> vec;
-typedef std::vector<std::string> vecStr;
+typedef std::string				  str;
+typedef std::wstring			  wstr;
+typedef std::vector<int>		  vec;
+typedef std::vector<std::string>  vecStr;
 typedef std::vector<std::wstring> vecWstr;
 
 void headerShow() noexcept;
