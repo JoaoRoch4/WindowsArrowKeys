@@ -37,6 +37,8 @@
 #include "Interface.hpp"
 #include "Menu.hpp"
 
+// TODO: Try alocate in a new trhead
+
 // TODO: Implement the Interface constructor
 Interface::Interface() {}
 
