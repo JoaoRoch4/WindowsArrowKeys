@@ -379,6 +379,7 @@ doxygen/*
 !doxygen/Doxyfile
 
 /enc_temp_folder/b4956bba7e7a7462fa20a65fd8ca1a
+<<<<<<< HEAD
 /WindowsKeys.vcxproj
 /*WindowsArrowKeys.sln
 /*WindowsArrowKeys.vcxproj.filters
@@ -386,3 +387,5 @@ doxygen/*
 /*cpp.hint
 
 /cpp.hint
+=======
+>>>>>>> 0418a31 (Add project files.)
