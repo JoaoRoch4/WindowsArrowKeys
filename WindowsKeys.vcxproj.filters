@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Solution Files">
+      <UniqueIdentifier>{68e53a35-e638-4348-89bc-f243f0dc4541}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Menu.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyTypes.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore">
+      <Filter>Solution Files</Filter>
+    </None>
+    <None Include="cpp.hint">
+      <Filter>Solution Files</Filter>
+    </None>
+    <None Include="README.md">
+      <Filter>Solution Files</Filter>
+    </None>
+    <None Include=".clang-format" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Menu.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MyTypes.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menuclass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt">
+      <Filter>Solution Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
